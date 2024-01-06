@@ -592,3 +592,43 @@ output_json = {vehicle_name: {"path": path}}
 
 print(json.dumps(output_json, indent=2))
 print('')
+
+import json
+
+
+output_data = {
+    "v0": {
+        "path": [
+            "r0",
+            "n11",
+            "n4",
+            "n15",
+            "n10",
+            "n14",
+            "n17",
+            "n7",
+            "n19",
+            "n6",
+            "n5",
+            "n12",
+            "n9",
+            "n2",
+            "n18",
+            "n1",
+            "n16",
+            "n3",
+            "n13",
+            "n8",
+            "n0",
+            "r0"
+        ]
+    }
+}
+
+
+output_file_path = "level0_output.json"
+
+with open(output_file_path, 'w') as output_file:
+    json.dump(output_data, output_file, indent=2)
+    print("File created successfully")
+
